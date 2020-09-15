@@ -2,7 +2,11 @@ package com.tennis.fr;
 
 public class BoardCalculator {
 
-	private static BoardCalculator instance = new BoardCalculator();
+	private static BoardCalculator instance;
+	
+	private BoardCalculator() {
+		
+	}
 
 	public static synchronized BoardCalculator getInstance() {
 		if (instance == null) {
